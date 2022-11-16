@@ -21,6 +21,7 @@ const Home: NextPage = () => {
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-thumb-[#2EB086]/20 scrollbar-track-[rgb(36,36,36)] scroll-smooth">
       <Head>
         <title>Portfolio - Rosanno Macabuhay</title>
+        <link rel="shortcut icon" href="/icon.svg" />
       </Head>
 
       <Header />

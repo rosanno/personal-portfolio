@@ -24,7 +24,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        className="rounded-full border border-gray-500 overflow-hidden relative"
+        className="rounded-full border border-gray-200 dark:border-gray-500 overflow-hidden relative"
       >
         <img
           src={skill.imgUrl}

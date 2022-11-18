@@ -8,7 +8,7 @@ body {
 
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm -tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
+    @apply px-6 py-2 border border-gray-300 dark:border-[#242424] rounded-full uppercase text-sm -tracking-widest text-gray-500 transition-all hover:border-[#2EB086]/60 hover:dark:border-[#2EB086]/40 hover:bg-[#2EB086]/10 hover:dark:bg-transparent hover:text-[#2EB086]/60 hover:dark:text-[#2EB086]/40;
   }
 
   .grayscale {
@@ -16,7 +16,7 @@ body {
   }
 
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all
-    focus:border-[#f7ab0a]/40 focus:text-[#f7ab0a]/40;
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-gray-400/20 dark:border-[#242424] text-gray-500 placeholder-gray-500 transition-all
+    focus:border-[#2EB086]/40 focus:text-[#2EB086]/40;
   }
 }

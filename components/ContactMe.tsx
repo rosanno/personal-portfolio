@@ -27,20 +27,20 @@ const ContactMe = (props: Props) => {
       <div className="flex flex-col space-y-12 mt-48">
         <h4 className="text-lg md:text-3xl font-semibold text-center">
           I have got just what you need.{' '}
-          <span className="decoration-[#f7ab0a]/50 underline">Lets Talk.</span>
+          <span className="decoration-[#2EB086]/50 underline">Lets Talk.</span>
         </h4>
 
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+            <PhoneIcon className="text-[#2EB086] h-7 w-7 animate-pulse" />
             <p>+1234567890</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+            <EnvelopeIcon className="text-[#2EB086] h-7 w-7 animate-pulse" />
             <p>rosannomacabuhay@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+            <MapPinIcon className="text-[#2EB086] h-7 w-7 animate-pulse" />
             <p>Palanog Camalig, Albay</p>
           </div>
         </div>
@@ -77,7 +77,7 @@ const ContactMe = (props: Props) => {
           />
           <button
             type="submit"
-            className="bg-[#f7ab0a] py-3 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#2EB086] hover:bg-[#2EB086]/25 transition duration-500 py-3 px-10 rounded-md text-white font-bold text-lg"
           >
             Submit
           </button>

@@ -33,7 +33,7 @@ const About = (props: Props) => {
         <h4 className="text-4xl font-semibold">Personal details</h4>
         <p className="text-base">
           Hi, i&apos;m Rosanno Macabuhay, a highly motivated person and creative
-          full developer developer dedicated to developing and optimizing
+          Full Stack Developer developer dedicated to developing and optimizing
           interactive, user friendly, and feature-rich websites. My objective is
           to help business owners and non-profit organizations to develop and
           implement their desired web application

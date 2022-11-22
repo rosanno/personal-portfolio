@@ -18,7 +18,7 @@ function Hero({}: Props) {
       <BackgroundCircles />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://scontent.flgp1-1.fna.fbcdn.net/v/t39.30808-1/263445935_2973168586345839_2191501231389724197_n.jpg?stp=c0.0.240.240a_dst-jpg_p240x240&_nc_cat=109&ccb=1-7&_nc_sid=f67be1&_nc_eui2=AeHv_NBjaJ4mCa-SFox3HqbhoCpJyj7PYBGgKknKPs9gEf_zqIPRvEaP2ERXKB6CXc-rdAgXe50N5BzcTKTzdtmi&_nc_ohc=sDl8T-rCrdoAX_l_6Ip&_nc_ht=scontent.flgp1-1.fna&oh=00_AfAXvRduBLTIqqomzlqmayArdiYlvGropanWo0iy3py5Bg&oe=63790B93"
+        src="/img/sanno.jpg"
         alt=""
       />
       <div className="z-20">

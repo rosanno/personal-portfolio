@@ -32,9 +32,11 @@ const About = (props: Props) => {
       <div className="space-y-10 px-0 md:px-0">
         <h4 className="text-4xl font-semibold">Personal details</h4>
         <p className="text-base">
-          I&apos;m Rosanno Macabuhay, a highly motivated person and creative web
-          developer dedicated to developing and optimizing interactive, user
-          friendly, and feature-rich websites.
+          Hi, i&apos;m Rosanno Macabuhay, a highly motivated person and creative
+          full developer developer dedicated to developing and optimizing
+          interactive, user friendly, and feature-rich websites. My objective is
+          to help business owners and non-profit organizations to develop and
+          implement their desired web application
         </p>
       </div>
     </motion.div>

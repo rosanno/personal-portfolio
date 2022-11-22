@@ -34,9 +34,9 @@ const About = (props: Props) => {
         <p className="text-base">
           Hi, i&apos;m Rosanno Macabuhay, a highly motivated person and creative
           Full Stack Developer dedicated to developing and optimizing
-          interactive, user friendly, and feature-rich websites. My objective is
-          to help business owners and non-profit organizations to develop and
-          implement their desired web application.
+          interactive, user friendly, and feature-rich web application. My
+          objective is to help business owners and non-profit organizations to
+          develop and implement their desired web application.
         </p>
       </div>
     </motion.div>

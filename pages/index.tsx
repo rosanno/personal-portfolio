@@ -9,7 +9,8 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import { BsSun, BsMoon } from "react-icons/bs";
 import useDarkMode from "../hooks/useDarkMode";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Loader from "../components/Loader";
 
 interface Icons {
   icon: string;
@@ -21,6 +22,13 @@ const Icon = ({ icon }: Icons) => (
 
 const Home: NextPage = () => {
   const [colorTheme, setTheme] = useDarkMode();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
+  if (isLoading) return <Loader />;
 
   return (
     <div className="bg-[#FFFFFF] dark:bg-[rgb(36,36,36)] text-black dark:text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 transition-all duration-500 scrollbar-thin scrollbar-thumb-[#2EB086]/20 scrollbar-track-[rgb(94,94,94)] dark:scrollbar-track-[rgb(36,36,36)] scroll-smooth">

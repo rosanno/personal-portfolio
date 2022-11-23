@@ -25,8 +25,13 @@ const Home: NextPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(false);
+    const loadingInterval = setInterval(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearInterval(loadingInterval);
   }, []);
+
 
   if (isLoading) return <Loader />;
 
@@ -85,6 +90,6 @@ const Home: NextPage = () => {
       </section>
     </div>
   );
-};
+};;;;;;;;
 
 export default Home;

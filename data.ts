@@ -81,6 +81,7 @@ export const projects = [
     id: 1,
     src: "./img/music-hubs.png",
     title: "Music Hubs",
+    github: "https://github.com/rosanno/music-hubs",
     url: "https://musical-pixie-d19449.netlify.app/",
     techStacks: [
       "./logo/react-seeklogo.com.svg",
@@ -94,6 +95,7 @@ export const projects = [
     id: 2,
     src: "./img/earsockets.png",
     title: "Earsockets MERN STACK",
+    github: "https://github.com/rosanno/earsockets-mernstack",
     url: "https://earsockets-client.onrender.com/",
     techStacks: [
       "./logo/react-seeklogo.com.svg",
@@ -107,6 +109,20 @@ export const projects = [
   },
   {
     id: 3,
+    src: "./img/movie.png",
+    title: "React Movie",
+    github: "https://github.com/rosanno/react-movie",
+    url: "",
+    techStacks: [
+      "./logo/react-seeklogo.com.svg",
+      "./logo/nextjs.svg",
+      "./logo/typescriptlang-icon.svg",
+      "./logo/tailwind-css-seeklogo.com.svg",
+    ],
+    desc: "Entertainment web app for those who love watching movies.",
+  },
+  {
+    id: 4,
     src: "./img/food_truck.png",
     title: "Food Truck Website",
     url: "",
@@ -121,7 +137,7 @@ export const projects = [
     desc: "Fullstack website for ordering food.Features user can register/login, add food cart, pay order food using paypal payment api, track food order and select user location using leaflet map integration.",
   },
   {
-    id: 4,
+    id: 5,
     src: "./img/chat-app.png",
     title: "Mern Chat",
     url: "https://chats-client.onrender.com/",
@@ -136,7 +152,7 @@ export const projects = [
     desc: "MERN web app using react, nodejs, express and socket.io. The features of this app user can see offline online status of another user, push notifications, chat rooms, and realtime chat messages.",
   },
   {
-    id: 5,
+    id: 6,
     src: "./img/weather.png",
     title: "Weather app",
     url: "https://thelocalweathers.netlify.app/",
@@ -145,17 +161,5 @@ export const projects = [
       "./logo/tailwind-css-seeklogo.com.svg",
     ],
     desc: "A web app that display the current weather in your area and hourly forecast weather. This app is power by openweathermap api.",
-  },
-  {
-    id: 6,
-    src: "./img/vape-republic.png",
-    title: "Capstone project for Vape Republic",
-    url: "",
-    techStacks: [
-      "./logo/php-vertical.svg",
-      "./logo/mysql-official.svg",
-      "./logo/flutterio-icon.svg",
-    ],
-    desc: "Final year thesis project for vape republic.",
   },
 ];

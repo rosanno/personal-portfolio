@@ -26,14 +26,14 @@ const ContactMe = (props: Props) => {
 
       <div className="flex flex-col space-y-12 mt-48">
         <h4 className="text-lg md:text-3xl font-semibold text-center">
-          I have got just what you need.{' '}
+          I have got just what you need.{" "}
           <span className="decoration-[#2EB086]/50 underline">Lets Talk.</span>
         </h4>
 
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#2EB086] h-7 w-7 animate-pulse" />
-            <p>+1234567890</p>
+            <p>09927414668</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#2EB086] h-7 w-7 animate-pulse" />
@@ -51,13 +51,13 @@ const ContactMe = (props: Props) => {
         >
           <div className="flex space-x-2">
             <input
-              {...register('name')}
+              {...register("name")}
               type="text"
               className="contactInput"
               placeholder="Name"
             />
             <input
-              {...register('email')}
+              {...register("email")}
               type="text"
               className="contactInput"
               placeholder="Email"
@@ -65,13 +65,13 @@ const ContactMe = (props: Props) => {
           </div>
 
           <input
-            {...register('subject')}
+            {...register("subject")}
             type="text"
             className="contactInput"
             placeholder="Subject"
           />
           <textarea
-            {...register('message')}
+            {...register("message")}
             placeholder="Message"
             className="contactInput"
           />

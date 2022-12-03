@@ -1,24 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import { motion } from 'framer-motion';
-import { projects } from '../data';
-import { LinkIcon } from '@heroicons/react/24/solid';
-import { RiShareBoxLine } from 'react-icons/ri';
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { projects } from "../data";
+import { AiFillGithub } from "react-icons/ai";
+import { RiShareBoxLine } from "react-icons/ri";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
-import { Navigation, Lazy } from 'swiper';
+import SwiperCore, { Navigation, Lazy } from "swiper";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/lazy';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/lazy";
 
 type Props = {};
 
 const Projects = (props: Props) => {
+  const swiperRef = useRef<SwiperCore>();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -31,10 +33,24 @@ const Projects = (props: Props) => {
       </h3>
 
       <div
-        id={'slider'}
-        className="w-full flex scrollbar overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scroll-smooth mt-24 md:mt-64 lg:mt-40"
+        id={"slider"}
+        className="relative w-full flex scrollbar overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scroll-smooth mt-24 md:mt-64 lg:mt-40"
       >
-        <Swiper navigation={true} lazy={true} modules={[Lazy, Navigation]}>
+        <FaChevronLeft
+          className="text-3xl absolute top-1/3 left-1/4 cursor-pointer z-10"
+          onClick={() => swiperRef.current?.slidePrev()}
+        />
+        <FaChevronRight
+          className="text-3xl absolute top-1/3 right-1/4 cursor-pointer z-10"
+          onClick={() => swiperRef.current?.slideNext()}
+        />
+        <Swiper
+          lazy={true}
+          modules={[Lazy]}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+        >
           {projects.map((project, i) => (
             <SwiperSlide key={project.id}>
               <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
@@ -46,7 +62,7 @@ const Projects = (props: Props) => {
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                   <div className="flex justify-center items-center space-x-4">
                     <h4 className="text-xl text-center">{project.title}</h4>
-                    {project.url !== '' && (
+                    {project.url !== "" && (
                       <a
                         href={project.url}
                         target="_blank"
@@ -54,6 +70,16 @@ const Projects = (props: Props) => {
                         className="inline-block hover:animate-pulse text-xl"
                       >
                         <RiShareBoxLine />
+                      </a>
+                    )}
+                    {project.github !== undefined && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block hover:animate-pulse text-xl"
+                      >
+                        <AiFillGithub />
                       </a>
                     )}
                   </div>

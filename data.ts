@@ -115,11 +115,11 @@ export const projects = [
     url: "",
     techStacks: [
       "./logo/react-seeklogo.com.svg",
-      "./logo/nextjs.svg",
+      "./logo/next-js-seeklogo.com.svg",
       "./logo/typescriptlang-icon.svg",
       "./logo/tailwind-css-seeklogo.com.svg",
     ],
-    desc: "Entertainment web app for those who love watching movies.",
+    desc: "Entertainment web app for those who love watching movies. This is build using TMDB API.",
   },
   {
     id: 4,

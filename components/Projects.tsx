@@ -92,7 +92,7 @@ const Projects = (props: Props) => {
                           <img
                             data-src={tech}
                             alt=""
-                            className="w-6 h-6 object-contain swiper-lazy"
+                            className="w-8 h-8 swiper-lazy"
                           />
                         </div>
                       ))}

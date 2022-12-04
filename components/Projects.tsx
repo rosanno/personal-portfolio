@@ -37,11 +37,11 @@ const Projects = (props: Props) => {
         className="relative w-full flex scrollbar overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scroll-smooth mt-24 md:mt-64 lg:mt-40"
       >
         <FaChevronLeft
-          className="text-3xl absolute top-1/3 left-1/4 cursor-pointer z-10"
+          className="text-3xl absolute top-1/3 left-5 lg:left-36 xl:left-1/4 cursor-pointer z-10"
           onClick={() => swiperRef.current?.slidePrev()}
         />
         <FaChevronRight
-          className="text-3xl absolute top-1/3 right-1/4 cursor-pointer z-10"
+          className="text-3xl absolute top-1/3 right-5 lg:right-36 xl:right-1/4 cursor-pointer z-10"
           onClick={() => swiperRef.current?.slideNext()}
         />
         <Swiper

@@ -140,6 +140,7 @@ export const projects = [
     id: 5,
     src: "./img/chat-app.png",
     title: "Mern Chat",
+    github: "https://github.com/rosanno/food-truck",
     url: "https://chats-client.onrender.com/",
     techStacks: [
       "./logo/react-seeklogo.com.svg",

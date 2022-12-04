@@ -125,6 +125,7 @@ export const projects = [
     id: 4,
     src: "./img/food_truck.png",
     title: "Food Truck Website",
+    github: "https://github.com/rosanno/food-truck",
     url: "",
     techStacks: [
       "./logo/angular-seeklogo.com.svg",
@@ -140,7 +141,6 @@ export const projects = [
     id: 5,
     src: "./img/chat-app.png",
     title: "Mern Chat",
-    github: "https://github.com/rosanno/food-truck",
     url: "https://chats-client.onrender.com/",
     techStacks: [
       "./logo/react-seeklogo.com.svg",

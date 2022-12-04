@@ -155,6 +155,7 @@ export const projects = [
     id: 6,
     src: "./img/weather.png",
     title: "Weather app",
+    github: "https://github.com/rosanno/weather-app",
     url: "https://thelocalweathers.netlify.app/",
     techStacks: [
       "./logo/vuejs-icon.svg",
